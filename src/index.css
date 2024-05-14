@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: patners1;
+  src: url(../assets/344397_1_0.woff2);
+}
+
+@font-face {
+  font-family: patners2;
+  src: url(../assets/344397_2_0.woff2);
+}
+
+::-webkit-scrollbar {
+  color: red;
+  background-color: white;
+  width: 10px;
+  height: 5px;
+  position: absolute;
+}
+::-webkit-scrollbar-thumb {
+  background: #f25252;
+  border-radius: 20px;
+}
+@keyframes car {
+  0% {
+    right: 150vw;
+    bottom: -20vh;
+  }
+  80% {
+    right: 150vw;
+    bottom: -20vh;
+  }
+  100% {
+    right: 15vw;
+    bottom: 0vh;
+  }
+}
+
+/* 
+#haha{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+} */
+
+.hahaha:hover > #iimm {
+  scale: 1;
+  background: #000;
+  background-color: darkblue;
+}
