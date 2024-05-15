@@ -6,25 +6,11 @@ import { CgArrowBottomRightR, CgArrowLongRight } from "react-icons/cg";
 import { IoEarOutline } from "react-icons/io5";
 
 const Home = () => {
-  const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: (i) => {
-      const delay = 1 + i * 0.5;
-      return {
-        pathLength: 1,
-        opacity: 1,
-        transition: {
-          pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-          opacity: { delay, duration: 0.01 },
-        },
-      };
-    },
-  };
   return (
     <div className="min-h-screen min-w-full relative overflow-hidden">
       <motion.div
         animate={{ x: -370, y: -250 }}
-        transition={{ delay: 3 }}
+        transition={{ delay: 2 }}
         className="font-semibold  font-[patners2] absolute top-[40vh] left-[30vw]  px-4 py-6 tracking-wider z-50"
       >
         <motion.svg
@@ -88,11 +74,17 @@ const Home = () => {
             fill="#1D1D1B"
           ></path>
         </motion.svg>
+        <img
+          id="creww"
+          className="scale-[0.7] absolute top-0 right-0 -mt-[13vh]"
+          src="./assets/crew-stop.webp"
+          alt=""
+        />
       </motion.div>
       <img
         src="./assets/car.gif"
         alt=""
-        style={{ animation: "car 6s 1" }}
+        style={{ animation: "car 4s 1" }}
         className="h-[80vh] object-cover -rotate-[7deg]  absolute right-[15vw] bottom-0 "
       />
       <Para

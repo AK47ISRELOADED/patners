@@ -12,23 +12,20 @@ const Para = ({ dimension }) => {
   // console.log(text);
   return (
     <div
-      className="hahaha  h-10 min-w-10 max-w-[25vw] bg-slate-700  flex items-center relative"
+      className="hahaha  h-10 min-w-10 max-w-[25vw]  flex items-center relative"
       style={{ top: top, left: left }}
     >
-      <h1>{Icon}</h1>
-      <h3
-        className="font-semibold
+      <div id="paraa" className=" flex items-center relative">
+        <h1>{Icon}</h1>
+        <h3
+          className="font-semibold
        font-[patners1] "
-        style={{ fontSize: size }}
-      >
-        {text}
-      </h3>
-      <img
-        id="iimm"
-        className=" absolute  -ml-[70px] scale-[0]"
-        src={image}
-        alt=""
-      />
+          style={{ fontSize: size }}
+        >
+          {text}
+        </h3>
+        <img id="iimm" className=" absolute  " src={image} alt="" />
+      </div>
     </div>
   );
 };

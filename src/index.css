@@ -43,8 +43,54 @@
     animation: name duration timing-function delay iteration-count direction fill-mode;
 } */
 
-.hahaha:hover > #iimm {
-  scale: 1;
-  background: #000;
-  background-color: darkblue;
+#iimm {
+  /* visibility: hidden; */
+  scale: 1.8;
+  opacity: 0%;
+}
+
+.hahaha:hover #iimm {
+  /* visibility: visible; */
+  /* scale: 1.8; */
+  opacity: 100%;
+  transition: all ease-in-out 0.4s;
+}
+
+#creww {
+  animation-name: crew;
+  animation-duration: 1s;
+  transition: all linear 0.4s;
+}
+
+@keyframes crew {
+  0% {
+    /* visibility: 0%; */
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    /* visibility: 50%; */
+    opacity: 100%;
+    scale: 1;
+  }
+}
+
+#paraa {
+  /* margin-top: 80px; */
+  animation: papa 4.5s;
+  transition: all linear;
+}
+@keyframes papa {
+  0% {
+    margin-top: 80px;
+    opacity: 0%;
+  }
+  90% {
+    margin-top: 80px;
+    opacity: 0%;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 100%;
+  }
 }
