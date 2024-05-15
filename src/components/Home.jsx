@@ -82,7 +82,7 @@ const Home = () => {
         />
       </motion.div>
       <img
-        src="./assets/car.gif"
+        src="https://partners.cpeople.ru/img/promo/car.gif"
         alt=""
         style={{ animation: "car 4s 1" }}
         className="h-[80vh] object-cover -rotate-[7deg]  absolute right-[15vw] bottom-0 "
