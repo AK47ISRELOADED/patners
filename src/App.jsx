@@ -5,13 +5,19 @@ import Second from "./components/Second";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import LocomotiveScroll from "locomotive-scroll";
+import Third from "./components/Third";
+import Fourth from "./components/Fourth";
+import Fifth from "./components/Fifth";
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
 
+  const locomotiveScroll = new LocomotiveScroll();
+
   useGSAP(() => {
     gsap.to(".main", {
-      x: "-100%",
+      x: "-400%",
       scrollTrigger: {
         pin: true,
         // left: "100vh",
@@ -24,9 +30,12 @@ function App() {
 
   return (
     <>
-      <div className="main min-h-[200%]  flex  ">
+      <div className="main max-h-[500%]  flex  ">
         <Home />
         <Second />
+        <Third />
+        <Fourth />
+        <Fifth />
       </div>
     </>
   );

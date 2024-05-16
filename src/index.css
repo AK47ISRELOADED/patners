@@ -94,3 +94,27 @@
     opacity: 100%;
   }
 }
+
+.miniimg {
+  /* visibility: hidden; */
+  opacity: 0%;
+}
+
+.minipa:hover .miniimg {
+  opacity: 100%;
+  transition: all ease-in-out 0.4s;
+}
+
+span {
+  font-family: patners1;
+  /* font-size: 100px; */
+  /* color: #000000; */
+  font-weight: bold;
+  text-decoration: underline solid;
+  cursor: pointer;
+}
+
+snap:hover {
+  color: #f25252;
+  scale: 1.2;
+}
