@@ -4,10 +4,23 @@ import Para from "./Para";
 import { CiPlay1 } from "react-icons/ci";
 import { CgArrowBottomRightR, CgArrowLongRight } from "react-icons/cg";
 import { IoEarOutline } from "react-icons/io5";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Home = () => {
+  // gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.from(".carimg", {
+      x: "-150%",
+      y: "30%",
+      duration: 2,
+      delay: 2.5,
+      ease: "back.out(2)",
+    });
+  });
   return (
-    <div className="min-h-screen min-w-full relative overflow-hidden">
+    <div className=" min-w-full h-screen relative top-0 *: overflow-hidden">
       <motion.div
         animate={{ x: -370, y: -250 }}
         transition={{ delay: 2 }}
@@ -84,8 +97,7 @@ const Home = () => {
       <img
         src="https://partners.cpeople.ru/img/promo/car.gif"
         alt=""
-        style={{ animation: "car 4s 1" }}
-        className="h-[80vh] object-cover -rotate-[7deg]  absolute right-[15vw] bottom-0 "
+        className="carimg h-[80vh] object-cover -rotate-[7deg] absolute right-[15vw] bottom-0  "
       />
       <Para
         dimension={{
