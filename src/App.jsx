@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <div className="main max-h-[500%]  flex  ">
+      <div className="main max-h-[500%]  flex">
         <Home />
         <Second />
         <Third />
